@@ -1,4 +1,7 @@
 local parent = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
+if not parent then
+print("sry")
+else
 	local ScrollingFrame1 = Instance.new("ScrollingFrame",parent)
 	ScrollingFrame1["ScrollBarImageColor3"] = Color3.new(0, 0, 0)
 	ScrollingFrame1["Active"] = true
@@ -930,4 +933,4 @@ local parent = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
 		ColorSequenceKeypoint.new(0,Color3.new(0.282353,0.278431,0.34902)),
 		ColorSequenceKeypoint.new(1,Color3.new(0.270588,0.258824,0.368627))
 	}
-	----UIGradient79----
+	end
