@@ -1,8 +1,8 @@
 local parent = game.CoreGui
-	--ScreenGui1--
 	local ScreenGui1 = Instance.new("ScreenGui",parent)
-	ScreenGui1["Name"] = "SunHubAonepiece"
+	ScreenGui1["Name"] = "SunHub"
 	ScreenGui1["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+	ScreenGui1.Enabled = false
 	----ScreenGui1----
 	--Frame2--
 	local Frame2 = Instance.new("Frame",ScreenGui1)
@@ -1428,7 +1428,7 @@ local parent = game.CoreGui
 		local  mainbutton = script.Parent.Main
 		local  Raibutton = script.Parent.Raid
 		local  telepobutton = script.Parent.Teleport
-		local menu = script.Parent.Parent
+		local menu = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
 		-- telepor active 
 		telepobutton.MouseButton1Click:Connect(function()
 			menu:FindFirstChild("Main").Visible = false
@@ -1474,3 +1474,14 @@ local parent = game.CoreGui
 		script.Parent.Parent.Menu.Move.Enabled = true
 		script.Parent:Destroy()
 	end)
+	local vr = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
+	wait(0.1)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sinbad1324/SunHub/main/AutoFarmAonePieceGameScript"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sinbad1324/SunHub/main/TeleportAonePieceGame"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sinbad1324/SunHub/main/Raid"))()
+    wait(0.1)
+    if vr:FindFirstChild("AutoFarmScroll") and vr:FindFirstChild("RaidScroll") and vr:FindFirstChild("Tleposcrolle") then
+    ScreenGui1.Enabled = true
+else
+print("sry")
+    end
