@@ -1,0 +1,1 @@
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/sinbad1324/SunHub/main/AonePieceGame"))()
