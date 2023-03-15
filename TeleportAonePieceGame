@@ -2,6 +2,7 @@ local parent = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
 	local ScrollingFrame1 = Instance.new("ScrollingFrame",parent)
 	ScrollingFrame1["ScrollBarImageColor3"] = Color3.new(0, 0, 0)
 	ScrollingFrame1["Active"] = true
+	ScrollingFrame1.Visible = fales
 	ScrollingFrame1["ScrollBarImageTransparency"] = 1
 	ScrollingFrame1["AnchorPoint"] = Vector2.new(1, 1)
 	ScrollingFrame1["Name"] = "Tleposcrolle"
