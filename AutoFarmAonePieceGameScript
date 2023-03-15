@@ -1,4 +1,8 @@
 local parent = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
+local parent = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
+if not parent then
+print("sry")
+else
 	--ScrollingFrame1--
 	local ScrollingFrame1 = Instance.new("ScrollingFrame",parent)
 	ScrollingFrame1["Visible"] = false
@@ -560,3 +564,4 @@ local parent = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
 	--UICorner64--
 	local UICorner64 = Instance.new("UICorner",TextButton63)
 	UICorner64["CornerRadius"] = UDim.new(2, 0)
+end
