@@ -1,4 +1,4 @@
-local parent = game.CoreGui:FindFirstChild("SunHubAonepiece"):FindFirstChild("Menu")
+local parent = game.CoreGui:FindFirstChild("SunHub"):FindFirstChild("Menu")
 	--ScrollingFrame1--
 	local ScrollingFrame1 = Instance.new("ScrollingFrame",parent)
 	ScrollingFrame1["Visible"] = false
